@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+
+@tailwind utilities;
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slideIn {
+    animation: slideIn 0.7s ease-out forwards;
+  }
+}

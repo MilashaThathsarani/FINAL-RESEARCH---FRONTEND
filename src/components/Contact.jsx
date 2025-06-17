@@ -2,51 +2,52 @@ import React from 'react';
 
 function Contact() {
   return (
-    <section className="bg-gray-50 py-16 px-6 md:px-16" id="contact">
-      <div className="max-w-3xl mx-auto text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-          Get in Touch
-        </h2>
-        <p className="text-gray-600 text-lg">
-          We'd love to hear from you. Whether you have a question, feedback, or just want to say hello — feel free to reach out.
-        </p>
+    <section className="bg-gray-50 py-20 px-6 md:px-16" id="join">
+      <div className="max-w-7xl mx-auto bg-white rounded-xl shadow-lg p-10 grid md:grid-cols-2 gap-10 items-center">
+        
+        {/* Text & Form Side */}
+        <div>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4 border-l-4 border-blue-500 pl-3">
+            Join with us
+          </h2>
+          <p className="text-gray-600 mb-6">
+            Are you a talented music producer who creates soothing sounds and tranquil melodies? 
+            Share your gift with our meditation community and let your music calm the soul.
+            Submit your tracks, reach a wider audience, and connect with listeners who seek healing through music.
+            We’ll respond within 2–3 days. Let's make a peaceful impact together.
+          </p>
+
+          <form className="space-y-4">
+            <input
+              type="email"
+              placeholder="Enter email"
+              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              required
+            />
+            <textarea
+              placeholder="Enter message"
+              rows="4"
+              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        {/* Image Side */}
+        <div>
+          <img
+            src="/images/meditation-join.jpg"
+            alt="Join Meditation"
+            className="w-full rounded-lg shadow-md object-cover"
+          />
+        </div>
       </div>
-
-      <form className="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md space-y-6">
-        <div>
-          <label className="block text-gray-700 font-medium mb-2">Full Name</label>
-          <input
-            type="text"
-            placeholder="Your name"
-            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          />
-        </div>
-
-        <div>
-          <label className="block text-gray-700 font-medium mb-2">Email Address</label>
-          <input
-            type="email"
-            placeholder="you@example.com"
-            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          />
-        </div>
-
-        <div>
-          <label className="block text-gray-700 font-medium mb-2">Message</label>
-          <textarea
-            rows="5"
-            placeholder="Type your message..."
-            className="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          className="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
-        >
-          Send Message
-        </button>
-      </form>
     </section>
   );
 }

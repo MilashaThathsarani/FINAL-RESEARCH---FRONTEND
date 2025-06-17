@@ -14,8 +14,9 @@ function Navbar() {
           <li><a href="#home" className="hover:text-blue-200 transition">Home</a></li>
           <li><a href="#about" className="hover:text-blue-200 transition">About</a></li>
           <li><a href="#features" className="hover:text-blue-200 transition">Features</a></li>
-          <li><a href="#chat" className="hover:text-blue-200 transition">AI Chat</a></li>
+          <li><a href="#chat" className="hover:text-blue-200 transition">Blog</a></li>
           <li><a href="#contact" className="hover:text-blue-200 transition">Contact</a></li>
+          <li><a href="#contact" className="hover:text-blue-200 transition">Login</a></li>
         </ul>
       </nav>
     </header>
