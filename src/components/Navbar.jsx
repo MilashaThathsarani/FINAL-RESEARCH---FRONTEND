@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -16,7 +17,11 @@ function Navbar() {
           <li><a href="#features" className="hover:text-blue-200 transition">Features</a></li>
           <li><a href="#chat" className="hover:text-blue-200 transition">Blog</a></li>
           <li><a href="#contact" className="hover:text-blue-200 transition">Contact</a></li>
-          <li><a href="#contact" className="hover:text-blue-200 transition">Login</a></li>
+          <li>
+            <Link to="/login" className="hover:text-blue-200 transition">
+              Login
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Signup from './SignUp';
 
@@ -43,7 +44,10 @@ function Login() {
         </form>
 
         <p className="text-sm text-center text-gray-500 mt-4">
-          Don’t have an account? <a href="#signup" className="text-indigo-600 hover:underline">Sign Up</a>
+
+         <Link to="/signup" className="text-indigo-600 hover:underline">
+             Don’t have an account? Sign Up...
+            </Link>
         </p>
       </div>
     </section>
