@@ -1,31 +1,78 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-function Navbar() {
+function NavBar() {
+  // Variants for the container to orchestrate staggered animations
+  const navContainerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Stagger the animation of children by 0.2 seconds
+      },
+    },
+  };
+
+  // Variants for individual navigation items
+  const navItemVariants = {
+    hidden: { y: -20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+  
+  // Hover effect for interactive elements
+  const hoverEffect = {
+    scale: 1.1,
+    transition: {
+        type: 'spring',
+        stiffness: 300,
+    }
+  }
+
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-blue-600 text-white">
-      <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <div className="text-2xl font-bold tracking-wide">
-          AURA
-        </div>
+    <div className='w-full h-28 top-0 right-0 left-0 z-50 bg-[#3E4227] flex items-center justify-between px-8'>
+      {/* Logo with a simple fade-in and scale animation */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className='text-white text-xl font-bold'>AURA</h1>
+      </motion.div>
 
-        {/* Navigation Links */}
-        <ul className="flex space-x-6 text-lg font-medium">
-          <li><a href="#home" className="hover:text-blue-200 transition">Home</a></li>
-          <li><a href="#about" className="hover:text-blue-200 transition">About</a></li>
-          <li><a href="#features" className="hover:text-blue-200 transition">Features</a></li>
-          <li><a href="#chat" className="hover:text-blue-200 transition">Blog</a></li>
-          <li><a href="#contact" className="hover:text-blue-200 transition">Contact</a></li>
-          <li>
-            <Link to="/login" className="hover:text-blue-200 transition">
-              Login
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      {/* Nav Links with staggered animation */}
+      <motion.ul 
+        className='flex items-center space-x-8'
+        variants={navContainerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {['Home', 'About', 'Features', 'Blog', 'Contact'].map((item) => (
+          <motion.li 
+            key={item} 
+            className='text-white text-lg font-medium cursor-pointer'
+            variants={navItemVariants}
+            whileHover={hoverEffect}
+          >
+            {item}
+          </motion.li>
+        ))}
+      </motion.ul>
+
+      {/* Login button with a hover effect */}
+      <motion.button 
+        className='bg-white text-[#3E4227] px-6 py-2 rounded-full font-semibold'
+        whileHover={hoverEffect}
+      >
+        Login
+      </motion.button>
+    </div>
   );
 }
 
-export default Navbar;
+export default NavBar;

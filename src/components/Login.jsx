@@ -35,12 +35,10 @@ function Login() {
           </div>
 
           {/* Submit */}
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 text-white font-semibold py-3 rounded-lg hover:bg-indigo-700 transition"
-          >
-            Login
-          </button>
+            <Link to="/trackshomepage"
+                  className="bg-amber-800 text-white px-5 py-1 rounded-full hover:bg-amber-950 transition w-max inline-block text-center">
+                  Login
+              </Link>
         </form>
 
         <p className="text-sm text-center text-gray-500 mt-4">

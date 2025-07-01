@@ -4,6 +4,7 @@ import SignUpPage from './pages/SignUpPage'
 import HomePage from './pages/HomePage'
 import Login from './components/Login'
 import Signup from './components/SignUp'
+import TracksHomePage from './pages/TracksHomePage'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Route path='/' element={<HomePage/>}/> 
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/login' element={<Login/>} />
+      <Route path='/trackshomepage' element={<TracksHomePage/>} />
     </Routes>
   )
 }
