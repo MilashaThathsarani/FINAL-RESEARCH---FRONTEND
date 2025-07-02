@@ -43,11 +43,11 @@ function Tracks() {
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold text-indigo-700">{track.title}</h3>
+                  <h3 className="text-xl font-semibold text-green-900">{track.title}</h3>
                   <p className="text-gray-600 text-sm mt-1">Mood: {track.mood}</p>
                   <p className="text-gray-700 mt-2">{track.description}</p>
                 </div>
-                <button className="mt-4 md:mt-0 bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">
+                <button className="mt-4 md:mt-0 bg-[#3E4227] text-white px-5 py-2 rounded-lg hover:bg-green-900">
                   ▶ Play
                 </button>
               </div>

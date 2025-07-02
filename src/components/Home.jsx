@@ -7,24 +7,24 @@ function Home() {
         
         {/* Left Side: Text Content */}
         <div className="flex flex-col justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Elevate your <br /> Soul with <span className="text-amber-900">AURA</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-shadow-black mb-4">
+            Elevate your <br /> Soul with <span className="text-green-900">AURA</span>
           </h1>
           <p className="text-gray-600 mb-8">
-            Meditation principles and calming audio are the building blocks of relaxation with AURA. Discover peace, clarity, and balance.
+            Meditation principles and calming audio are the building blocks of relaxation with AURA. djvchdsgvcygvcdgvyfdvwrvgethr
           </p>
-          <button className="bg-amber-800 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition w-max">
+          <button className="bg-[#3E4227] text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition w-max">
             Get Started
           </button>
         </div>
 
         {/* Right Side: Illustration & Features */}
         <div className="flex flex-col items-center text-center md:text-left">
-          <img
-            src="/images/yoga-pose.png"
+          {/* <img
+            src="/images/logo.png"
             alt="Yoga Illustration"
-            className="w-72 mb-8 rounded-xl shadow-md"
-          />
+            className="w-12 mb-8 rounded-xl shadow-md"
+          /> */}
 
           <div className="space-y-4 w-full">
             <div className="flex items-start gap-4">

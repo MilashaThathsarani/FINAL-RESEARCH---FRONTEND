@@ -7,7 +7,7 @@ function Contact() {
         
         {/* Text & Form Side */}
         <div>
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 border-l-4 border-blue-500 pl-3">
+          <h2 className="text-3xl font-bold text-black mb-4 border-l-4 border-green-900 pl-3">
             Join with us
           </h2>
           <p className="text-gray-600 mb-6">
@@ -21,18 +21,18 @@ function Contact() {
             <input
               type="email"
               placeholder="Enter email"
-              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900"
               required
             />
             <textarea
               placeholder="Enter message"
               rows="4"
-              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-900"
               required
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition"
+              className="bg-[#3E4227] text-white px-6 py-3 rounded-md hover:bg-green-900 transition"
             >
               Send Message
             </button>
