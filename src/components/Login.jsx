@@ -8,7 +8,7 @@ function Login() {
   const togglePassword = () => setShowPassword(prev => !prev);
 
   return (
-    <section className="min-h-screen bg-gray-100 flex items-center justify-center px-6 py-12">
+    <section className="min-h-screen bg-[#3E4227] flex items-center justify-center px-6 py-12">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-8">
 
         {/* Logo at the top */}
@@ -32,7 +32,7 @@ function Login() {
             <input
               type="text"
               placeholder="Enter your username"
-              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-green-900"
               required
             />
           </div>
@@ -44,7 +44,7 @@ function Login() {
               <input
                 type={showPassword ? 'text' : 'password'}
                 placeholder="Enter your password"
-                className="w-full border border-gray-300 rounded-lg p-3 pr-10 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                className="w-full border border-gray-300 rounded-lg p-3 pr-10 focus:outline-none focus:ring-2 focus:ring-green-900"
                 required
               />
               <button
@@ -60,14 +60,14 @@ function Login() {
           {/* Submit */}
           <Link
             to="/trackshomepage"
-            className="bg-amber-800 text-white px-5 py-2 rounded-full hover:bg-amber-950 transition w-full text-center block"
+            className="bg-[#3E4227] text-white px-5 py-2 rounded-lg hover:bg-green-900 transition w-full text-center block"
           >
             Login
           </Link>
         </form>
 
-        <p className="text-sm text-center text-gray-500 mt-4">
-          <Link to="/signup" className="text-indigo-600 hover:underline">
+        <p className="text-sm text-center text-green-900 mt-4">
+          <Link to="/signup" className="text-green-900 font-semibold hover:underline">
             Don’t have an account? Sign Up...
           </Link>
         </p>

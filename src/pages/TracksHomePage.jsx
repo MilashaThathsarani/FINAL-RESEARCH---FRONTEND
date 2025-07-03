@@ -11,12 +11,14 @@ import Login from '../components/Login';
 import Tracks from '../components/Tracks';
 import Features from '../components/Features';
 import HomeNavBar from '../components/HomeNavBar';
+import TracksHome from '../components/TracksHome';
 
 
 function TracksHomePage() {
   return (
     <>
       <HomeNavBar/>
+      <TracksHome/>
 
     </>
     

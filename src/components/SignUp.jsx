@@ -2,33 +2,47 @@ import React from 'react';
 
 function Signup() {
   return (
-    <section className="min-h-screen bg-gray-50 flex items-center justify-center px-6 py-12">
-      <div className="w-full max-w-md bg-white rounded-lg shadow-md p-8">
+    <section className="min-h-screen bg-[#3E4227] flex items-center justify-center px-6 py-12">
+      <div className="w-full max-w-md bg-white rounded-lg shadow-md p-5">
+
+        {/* Logo at the top */}
+        <div className="flex justify-center mb-5">
+          <img
+            src="/images/logo.png"
+            alt="AURA Logo"
+            className="w-20 h-20 object-contain"
+          />
+        </div>
+
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Create Your AURA Account
         </h2>
 
-        <form className="space-y-6">
-          {/* First Name */}
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">First Name</label>
-            <input
-              type="text"
-              placeholder="Enter your first name"
-              className="w-full border border-gray-300 rounded-lg p-1 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              required
-            />
-          </div>
+        <form className="space-y-5">
 
-           {/* Last Name */}
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">Last Name</label>
-            <input
-              type="text"
-              placeholder="Enter your last name"
-              className="w-full border border-gray-300 rounded-lg p-1 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-              required
-            />
+          {/* First & Last Name in One Row */}
+          <div className="flex space-x-4">
+            {/* First Name */}
+            <div className="flex-1">
+              <label className="block text-gray-700 font-medium mb-1">First Name</label>
+              <input
+                type="text"
+                placeholder="First name"
+                className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
+                required
+              />
+            </div>
+
+            {/* Last Name */}
+            <div className="flex-1">
+              <label className="block text-gray-700 font-medium mb-1">Last Name</label>
+              <input
+                type="text"
+                placeholder="Last name"
+                className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
+                required
+              />
+            </div>
           </div>
 
           {/* Birthday */}
@@ -36,18 +50,18 @@ function Signup() {
             <label className="block text-gray-700 font-medium mb-1">Birthday</label>
             <input
               type="date"
-              className="w-full border border-gray-300 rounded-lg p-1 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
               required
             />
           </div>
 
-           {/* Email*/}
+          {/* Email */}
           <div>
-            <label className="block text-gray-700 font-medium mb-1">E mail</label>
+            <label className="block text-gray-700 font-medium mb-1">Email</label>
             <input
-              type="text"
+              type="email"
               placeholder="Enter your email"
-              className="w-full border border-gray-300 rounded-lg p-1 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
               required
             />
           </div>
@@ -58,23 +72,15 @@ function Signup() {
             <input
               type="tel"
               placeholder="07x xxx xxxx"
-              className="w-full border border-gray-300 rounded-lg p-1 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
               required
             />
           </div>
 
-           {/* cancel */}
-          <button
-            type="cancel"
-            className="w-30 ml-1 bg-red-600 text-white font-semibold py-1 rounded-lg hover:bg-red-800 transition"
-          >
-            Cancel
-          </button>
-
           {/* Submit */}
           <button
             type="submit"
-            className="w-30 mr-3 bg-indigo-600 text-white font-semibold py-1 rounded-lg hover:bg-indigo-700 transition"
+            className="w-full bg-[#3E4227] text-white font-semibold py-2 rounded-lg hover:bg-green-900 transition"
           >
             Sign Up
           </button>

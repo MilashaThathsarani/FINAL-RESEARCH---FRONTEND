@@ -13,7 +13,7 @@ function Home() {
           <p className="text-gray-600 mb-8">
             Meditation principles and calming audio are the building blocks of relaxation with AURA. djvchdsgvcygvcdgvyfdvwrvgethr
           </p>
-          <button className="bg-[#3E4227] text-white px-6 py-3 rounded-lg hover:bg-pink-700 transition w-max">
+          <button className="bg-[#3E4227] text-white px-6 py-3 rounded-lg hover:bg-green-900 transition w-max">
             Get Started
           </button>
         </div>

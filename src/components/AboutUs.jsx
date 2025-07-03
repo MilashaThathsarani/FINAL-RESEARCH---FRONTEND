@@ -22,7 +22,7 @@ function AboutUs() {
               AURA gives you access to mood-based audio, a friendly AI chatbot,
               and professional guidance—all in one calming digital space.
             </p>
-            <button className="bg-[#3E4227] text-white px-6 py-3 rounded-lg transition">
+            <button className="bg-[#3E4227] text-white px-6 py-3 rounded-lg hover:bg-green-900 transition">
               Read More
             </button>
           </div>
