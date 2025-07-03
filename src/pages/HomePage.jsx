@@ -20,7 +20,6 @@ function HomePage() {
       <AboutUs/>
       <Features/>
       <Contact/>
-      <Tracks/>
       <Footer/>
 
 

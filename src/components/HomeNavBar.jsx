@@ -33,10 +33,10 @@ function HomeNavBar() {
     },
   };
 
-  // Nav items with icons
+  // Nav items with icons and optional links
   const navItems = [
     { label: 'Fav', icon: <FaStar size={20} /> },
-    { label: 'Council', icon: <FaUserMd size={20} /> },
+    { label: 'Council', icon: <FaUserMd size={20} />, to: '/counsellors' },
     { label: 'Chat', icon: <FaComments size={20} /> },
     { label: 'Contact', icon: <FaPhoneAlt size={20} /> }
   ];
@@ -68,21 +68,34 @@ function HomeNavBar() {
         animate="visible"
       >
         {navItems.map((item) => (
-          <motion.li
-            key={item.label}
-            className='flex items-center space-x-2 text-white text-lg font-medium cursor-pointer'
-            variants={navItemVariants}
-            whileHover={hoverEffect}
-          >
-            {item.icon}
-            <span>{item.label}</span>
-          </motion.li>
+          item.to ? (
+            <MotionLink
+              key={item.label}
+              to={item.to}
+              className='flex items-center space-x-2 text-white text-lg font-medium'
+              variants={navItemVariants}
+              whileHover={hoverEffect}
+            >
+              {item.icon}
+              <span>{item.label}</span>
+            </MotionLink>
+          ) : (
+            <motion.li
+              key={item.label}
+              className='flex items-center space-x-2 text-white text-lg font-medium cursor-pointer'
+              variants={navItemVariants}
+              whileHover={hoverEffect}
+            >
+              {item.icon}
+              <span>{item.label}</span>
+            </motion.li>
+          )
         ))}
       </motion.ul>
 
       {/* Profile icon link */}
       <MotionLink
-        to="/login"
+        to="/myprofile"
         className='text-white mr-7'
         whileHover={hoverEffect}
       >
