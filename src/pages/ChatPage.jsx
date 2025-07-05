@@ -1,9 +1,8 @@
 import React from 'react'
 import HomeNavBar from '../components/HomeNavBar';
 
-function FavouritsPage() {
-
-      return (
+function ChatPage() {
+    return (
     <>
       <HomeNavBar/>
 
@@ -11,4 +10,4 @@ function FavouritsPage() {
       )
 }
 
-export default FavouritsPage
+export default ChatPage

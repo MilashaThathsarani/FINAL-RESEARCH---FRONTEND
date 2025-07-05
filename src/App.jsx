@@ -8,6 +8,12 @@ import TracksHomePage from './pages/TracksHomePage'
 import MyProfile from './components/MyProfile'
 import Counsellors from './components/Counsellors'
 import CounsellorsPage from './pages/CounsellorsPage'
+import FavouritsPage from './pages/FavouritsPage'
+import ChatPage from './pages/ChatPage'
+import ContactPage from './pages/ContactPage'
+import AdminLayout from './components/admin/AdminLayout'
+import Dashboard from './components/admin/Dashboard'
+import ManageCounsellors from './components/admin/ManageCounsellors'
 
 function App() {
   return (
@@ -17,7 +23,13 @@ function App() {
       <Route path='/login' element={<Login/>} />
       <Route path='/trackshomepage' element={<TracksHomePage/>} />
       <Route path='/myprofile' element={<MyProfile/>} />
-       <Route path='/counsellors' element={<CounsellorsPage/>} />
+      <Route path='/counsellors' element={<CounsellorsPage/>} />
+      <Route path='/fav' element={<FavouritsPage/>} />
+      <Route path='/chat' element={<ChatPage/>} />
+      <Route path='/contact' element={<ContactPage/>} />
+      <Route path="/admin" element={<AdminLayout />}/>
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/managecounsellors" element={<ManageCounsellors />} />
     </Routes>
   )
 }

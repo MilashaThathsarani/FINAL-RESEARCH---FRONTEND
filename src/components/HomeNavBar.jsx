@@ -35,10 +35,10 @@ function HomeNavBar() {
 
   // Nav items with icons and optional links
   const navItems = [
-    { label: 'Fav', icon: <FaStar size={20} /> },
-    { label: 'Council', icon: <FaUserMd size={20} />, to: '/counsellors' },
-    { label: 'Chat', icon: <FaComments size={20} /> },
-    { label: 'Contact', icon: <FaPhoneAlt size={20} /> }
+    { label: 'Fav', icon: <FaStar size={20} /> ,to: '/fav'},
+    { label: 'Council', icon: <FaUserMd size={20} />, to: '/counsellors'},
+    { label: 'Chat', icon: <FaComments size={20} />, to: '/chat'},
+    { label: 'Contact', icon: <FaPhoneAlt size={20} />, to: '/contact'}
   ];
 
   return (
@@ -56,6 +56,7 @@ function HomeNavBar() {
             alt="AURA Logo"
             className="w-16 h-19 ml-10"
           />
+          
           <span className='text-white text-3xl font-sans ml-6'>AURA</span>
         </div>
       </motion.div>
