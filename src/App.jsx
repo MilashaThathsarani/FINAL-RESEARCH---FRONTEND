@@ -1,12 +1,10 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import SignUpPage from './pages/SignUpPage'
 import HomePage from './pages/HomePage'
 import Login from './components/Login'
 import Signup from './components/SignUp'
 import TracksHomePage from './pages/TracksHomePage'
 import MyProfile from './components/MyProfile'
-import Counsellors from './components/Counsellors'
 import CounsellorsPage from './pages/CounsellorsPage'
 import FavouritsPage from './pages/FavouritsPage'
 import ChatPage from './pages/ChatPage'
@@ -14,6 +12,11 @@ import ContactPage from './pages/ContactPage'
 import AdminLayout from './components/admin/AdminLayout'
 import Dashboard from './components/admin/Dashboard'
 import ManageCounsellors from './components/admin/ManageCounsellors'
+import AdminLogin from './components/admin/AdminLogin'
+import MoodsPage from './pages/MoodsPage'
+import HappyMoodPage from './pages/HappyMoodPage'
+import SadMoodPage from './pages/SadMoodPage'
+import AngryMoodPage from './pages/AngryMoodPage'
 
 function App() {
   return (
@@ -30,6 +33,11 @@ function App() {
       <Route path="/admin" element={<AdminLayout />}/>
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/managecounsellors" element={<ManageCounsellors />} />
+      <Route path="/admin/login" element={<AdminLogin />} />
+      <Route path="/moods" element={<MoodsPage />} />
+      <Route path="/mood/happy" element={<HappyMoodPage/>} /> 
+      <Route path="/mood/sad" element={<SadMoodPage/>} /> 
+      <Route path="/mood/angry" element={<AngryMoodPage/>} />
     </Routes>
   )
 }

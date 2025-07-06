@@ -59,7 +59,7 @@ function Login() {
 
           {/* Submit */}
           <Link
-            to="/trackshomepage"
+            to="/moods"
             className="bg-[#3E4227] text-white px-5 py-2 rounded-lg hover:bg-green-900 transition w-full text-center block"
           >
             Login

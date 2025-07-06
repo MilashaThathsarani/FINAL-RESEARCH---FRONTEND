@@ -1,18 +1,18 @@
 import React from 'react'
 import HomeNavBar from '../components/HomeNavBar'
-import Counsellors from '../components/Counsellors'
 import Moods from '../components/Moods'
+import HappyMood from '../components/HappyMood'
 
-function MoodsPage() {
+function HappyMoodPage() {
    return (
 
       <>
       <HomeNavBar/>
-      <Moods/>
+      <HappyMood/>
     
     </>
    )
   
 }
 
-export default MoodsPage
+export default HappyMoodPage
