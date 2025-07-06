@@ -1,6 +1,5 @@
 import React from 'react'
 import HomeNavBar from '../components/HomeNavBar'
-import Counsellors from '../components/Counsellors'
 import Moods from '../components/Moods'
 
 function MoodsPage() {
