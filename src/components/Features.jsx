@@ -8,74 +8,50 @@ const features = [
   {
     title: 'Healing',
     description:
-      'Calm your mind and thoughts to rediscover your inner strength and peace.',
-    icon: '/icons/healing.png',
+      'Calm your mind and rediscover your inner strength and peace.',
+    icon: '/images/logo.png',
   },
   {
     title: 'Relaxation',
     description:
-      'Let your body and mind settle with deep serenity and satisfaction.',
-    icon: '/icons/relaxation.png',
+      'Let your body and mind settle into deep serenity and satisfaction.',
+    icon: '/images/logo.png',
   },
   {
     title: 'Chillout',
     description:
       'Ease tension and stress with music that helps you breathe and smile again.',
-    icon: '/icons/chillout.png',
+    icon: '/images/logo.png',
   },
   {
     title: 'Focus',
     description:
-      'Sharpen your attention with ambient tones and eliminate distractions.',
-    icon: '/icons/focus.png',
+      'Sharpen your attention with ambient tones that eliminate distractions.',
+    icon: '/images/logo.png',
   },
-   {
-    title: 'Focus',
+  {
+    title: 'Mindful Calm',
     description:
-      'Sharpen your attention with ambient tones and eliminate distractions.',
-    icon: '/icons/focus.png',
+      'Meditative soundscapes for a peaceful, focused mind.',
+    icon: '/images/logo.png',
   },
-   {
-    title: 'Focus',
-    description:
-      'Sharpen your attention with ambient tones and eliminate distractions.',
-    icon: '/icons/focus.png',
-  },
-   {
-    title: 'Focus',
-    description:
-      'Sharpen your attention with ambient tones and eliminate distractions.',
-    icon: '/icons/focus.png',
-  },
-   {
-    title: 'Focus',
-    description:
-      'Sharpen your attention with ambient tones and eliminate distractions.',
-    icon: '/icons/focus.png',
-  },
-   {
-    title: 'Focus',
-    description:
-      'Sharpen your attention with ambient tones and eliminate distractions.',
-    icon: '/icons/focus.png',
-  }
 ];
 
 function Features() {
   return (
-    <section className="py-16 px-6 md:px-16 bg-white" id="features">
-      <div className="max-w-4xl mx-auto text-center mb-10">
-        <h2 className="text-4xl font-bold text-black">
+    <section className="py-20 px-6 md:px-16 bg-gradient-to-b from-white to-blue-50" id="features">
+      <div className="max-w-4xl mx-auto text-center mb-12">
+        <h2 className="text-4xl md:text-4xl font-bold text-blue-950 mb-4">
           Discover Your Inner World
         </h2>
-        <p className="text-green-900 mt-2">
-          Destination of healing is worth the journey.
+        <p className="text-blue-900 text-lg">
+          Your journey of healing begins here.
         </p>
       </div>
 
       <Swiper
         modules={[Pagination]}
-        spaceBetween={20}
+        spaceBetween={30}
         slidesPerView={1}
         pagination={{ clickable: true }}
         breakpoints={{
@@ -85,10 +61,18 @@ function Features() {
       >
         {features.map((feature, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg transition text-center h-full flex flex-col justify-between">
-              <img src={feature.icon} alt={feature.title} className="w-14 h-14 mx-auto mb-4" />
-              <h3 className="text-xl font-semibold text-black mb-2">{feature.title}</h3>
-              <p className="text-green-900 text-sm">{feature.description}</p>
+            <div className="bg-white border border-blue-100 p-8 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center text-center">
+              <div className="bg-blue-100 p-4 rounded-full mb-5 shadow-sm">
+                <img
+                  src={feature.icon}
+                  alt={feature.title}
+                  className="w-14 h-14 object-contain"
+                />
+              </div>
+              <h3 className="text-2xl font-semibold text-blue-950 mb-3">{feature.title}</h3>
+              <p className="text-black text-sm leading-relaxed">
+                {feature.description}
+              </p>
             </div>
           </SwiperSlide>
         ))}

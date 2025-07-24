@@ -15,7 +15,7 @@ import Features from '../components/Features';
 function HomePage() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       <Home/>
       <AboutUs/>
       <Features/>

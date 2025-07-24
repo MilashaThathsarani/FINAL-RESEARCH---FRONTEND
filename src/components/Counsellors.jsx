@@ -3,80 +3,80 @@ import { FaPlay } from 'react-icons/fa';
 
 const counsellors = [
   {
-    title: 'Healing Waves',
+    title: 'Mr. John',
     description: 'Calm your mind with gentle ocean sounds.fgvuydfgevuiesyyyyyyyyyyyytrhbryyyyyythtyty',
-    mobile:'0769069384',
-    icon: '/images/logo.png',
+    mobile:'076 906 9384',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Deep Relax',
     description: 'Soft pads and serene textures.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Chillout Lounge',
     description: 'Laid-back beats for stress relief.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Focus Flow',
     description: 'Ambient sounds to boost concentration.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Mindful Calm',
     description: 'Meditative soundscape for inner peace.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
    {
     title: 'Healing Waves',
     description: 'Calm your mind with gentle ocean sounds.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Deep Relax',
     description: 'Soft pads and serene textures.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Chillout Lounge',
     description: 'Laid-back beats for stress relief.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Focus Flow',
     description: 'Ambient sounds to boost concentration.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Mindful Calm',
     description: 'Meditative soundscape for inner peace.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
    {
     title: 'Healing Waves',
     description: 'Calm your mind with gentle ocean sounds.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Deep Relax',
     description: 'Soft pads and serene textures.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Chillout Lounge',
     description: 'Laid-back beats for stress relief.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Focus Flow',
     description: 'Ambient sounds to boost concentration.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   {
     title: 'Mindful Calm',
     description: 'Meditative soundscape for inner peace.',
-    icon: '/images/logo.png',
+    icon: '/images/user.jfif',
   },
   // ... rest of your tracks ...
 ];

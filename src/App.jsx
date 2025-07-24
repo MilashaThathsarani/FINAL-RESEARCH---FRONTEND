@@ -17,6 +17,10 @@ import MoodsPage from './pages/MoodsPage'
 import HappyMoodPage from './pages/HappyMoodPage'
 import SadMoodPage from './pages/SadMoodPage'
 import AngryMoodPage from './pages/AngryMoodPage'
+import Home from './components/Home'
+import AboutUs from './components/AboutUs'
+import Contact from './components/Contact'
+import Features from './components/Features'
 
 function App() {
   return (
@@ -38,6 +42,10 @@ function App() {
       <Route path="/mood/happy" element={<HappyMoodPage/>} /> 
       <Route path="/mood/sad" element={<SadMoodPage/>} /> 
       <Route path="/mood/angry" element={<AngryMoodPage/>} />
+      <Route path="/home" element={<Home/>} />
+      <Route path="/about" element={<AboutUs/>} />
+      <Route path="/contact" element={<Contact/>} />
+      <Route path="/features" element={<Features/>} />
     </Routes>
   )
 }
