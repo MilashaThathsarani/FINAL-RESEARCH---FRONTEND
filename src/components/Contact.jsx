@@ -42,7 +42,7 @@ function Contact() {
         {/* Image Side */}
         <div>
           <img
-            src="/images/images.jfif"
+            src="/images/pattern_react.png"
             alt="Join Meditation"
             className="w-full rounded-lg shadow-md object-cover"
           />

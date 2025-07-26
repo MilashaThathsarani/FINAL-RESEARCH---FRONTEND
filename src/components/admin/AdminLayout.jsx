@@ -1,22 +1,22 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { FaTachometerAlt, FaUserMd, FaCog } from 'react-icons/fa';
 
 function AdminLayout() {
   return (
-    <div className="flex h-screen">
-      {/* Sidebar */}
-      <aside className="w-64 bg-[#3E4227] text-white flex flex-col p-4">
-        <h2 className="text-2xl font-bold mb-6">AURA Admin</h2>
-        <nav className="flex flex-col space-y-4">
-          <Link to="/dashboard" className="hover:text-green-300">Dashboard</Link>
-          <Link to="/managecounsellors" className="hover:text-green-300">Manage Counsellors</Link>
-        </nav>
-      </aside>
-
-      {/* Main Content */}
-      <main className="flex-1 p-6 bg-gray-100 overflow-auto">
-        <Outlet />
-      </main>
+    <div className="w-64 bg-white shadow-lg min-h-screen px-4 py-8">
+      <h2 className="text-2xl font-bold text-center text-blue-900 mb-8">AURA Admin</h2>
+      <nav className="space-y-6">
+        <Link to="/dashboard" className="flex items-center text-blue-900 hover:text-blue-700">
+          <FaTachometerAlt className="mr-3" /> Dashboard
+        </Link>
+        <Link to="/counselors" className="flex items-center text-blue-900 hover:text-blue-700">
+          <FaUserMd className="mr-3" /> Counselors
+        </Link>
+        <Link to="/settings" className="flex items-center text-blue-900 hover:text-blue-700">
+          <FaCog className="mr-3" /> Settings
+        </Link>
+      </nav>
     </div>
   );
 }

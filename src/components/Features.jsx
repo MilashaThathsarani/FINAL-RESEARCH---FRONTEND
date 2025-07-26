@@ -2,7 +2,8 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import 'swiper/css/autoplay';
+import { Pagination, Autoplay } from 'swiper/modules';
 
 const features = [
   {
@@ -50,9 +51,15 @@ function Features() {
       </div>
 
       <Swiper
-        modules={[Pagination]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
+        loop={true}
+        autoplay={{
+          delay: 2500, // time between slides (ms)
+          disableOnInteraction: false, // keeps autoplay running after interaction
+        }}
+        speed={900} // animation speed (ms)
         pagination={{ clickable: true }}
         breakpoints={{
           768: { slidesPerView: 2 },

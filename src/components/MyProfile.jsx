@@ -60,18 +60,18 @@ function MyProfile() {
   };
 
   return (
-    <div className="min-h-screen bg-[#3E4227] flex items-center justify-center py-12 px-4">
+    <div className="min-h-screen bg-blue-950 flex items-center justify-center py-12 px-4">
       <div className="bg-white shadow-lg rounded-xl max-w-md w-full p-8">
         <div className="flex flex-col items-center text-center mb-6 relative">
           <img
             src={profile.avatar}
             alt="User Avatar"
-            className="w-24 h-24 rounded-full mb-2 border border-green-300 object-cover cursor-pointer hover:opacity-90 transition"
+            className="w-24 h-24 rounded-full mb-2 border border-blue-300 object-cover cursor-pointer hover:opacity-90 transition"
             onClick={handleAvatarClick}
           />
           <button
             onClick={handleAvatarClick}
-            className="flex items-center text-sm text-green-700 hover:text-green-900 transition"
+            className="flex items-center text-sm text-blue-700 hover:text-blue-900 transition"
           >
             <FaCamera className="mr-1" /> Change Photo
           </button>
@@ -82,10 +82,10 @@ function MyProfile() {
             onChange={handleFileChange}
             className="hidden"
           />
-          <h2 className="text-2xl font-bold text-[#3E4227] mt-2">
+          <h2 className="text-2xl font-bold text-blue-950 mt-2">
             {profile.firstName} {profile.lastName}
           </h2>
-          <p className="text-green-900">{profile.email}</p>
+          <p className="text-blue-900">{profile.email}</p>
         </div>
 
         <form className="space-y-4">
@@ -96,7 +96,7 @@ function MyProfile() {
               value={profile.firstName}
               onChange={handleChange}
               placeholder="First Name"
-              className="w-1/2 border border-green-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-900"
+              className="w-1/2 border border-blue-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-blue-900"
             />
             <input
               type="text"
@@ -104,7 +104,7 @@ function MyProfile() {
               value={profile.lastName}
               onChange={handleChange}
               placeholder="Last Name"
-              className="w-1/2 border border-green-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-900"
+              className="w-1/2 border border-blue-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-blue-900"
             />
           </div>
 
@@ -113,7 +113,7 @@ function MyProfile() {
             name="birthday"
             value={profile.birthday}
             onChange={handleChange}
-            className="w-full border border-green-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-900"
+            className="w-full border border-blue-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-900"
           />
 
           <input
@@ -122,7 +122,7 @@ function MyProfile() {
             value={profile.email}
             onChange={handleChange}
             placeholder="Email"
-            className="w-full border border-green-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-900"
+            className="w-full border border-blue-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-blue-900"
           />
 
           <input
@@ -131,14 +131,14 @@ function MyProfile() {
             value={profile.contactNumber}
             onChange={handleChange}
             placeholder="Contact Number"
-            className="w-full border border-green-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-900"
+            className="w-full border border-blue-700 rounded-lg p-2 focus:outline-none focus:ring focus:ring-blue-900"
           />
         </form>
 
         <div className="flex justify-between mt-6">
           <button
             onClick={handleSave}
-            className="flex items-center bg-[#3E4227] hover:bg-green-700 text-white px-4 py-2 rounded-lg transition"
+            className="flex items-center bg-[#3E4227] hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition"
           >
             <FaSave className="mr-2" /> Save Changes
           </button>

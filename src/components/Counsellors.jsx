@@ -88,7 +88,7 @@ function Counsellors() {
         <h2 className="text-2xl md:text-4xl font-bold text-black mb-2">
           Councellors
         </h2>
-        <p className="text-green-900">
+        <p className="text-blue-900">
           Discover soothing sounds tailored for your mood.
         </p>
       </div>
@@ -97,7 +97,7 @@ function Counsellors() {
         {counsellors.map((track, index) => (
           <div
             key={index}
-            className="bg-white border border-green-200 p-6 rounded-xl shadow hover:shadow-lg transition text-center h-full flex flex-col justify-between"
+            className="bg-white border border-blue-200 p-6 rounded-xl shadow hover:shadow-lg transition text-center h-full flex flex-col justify-between"
           >
             <img
               src={track.icon}
@@ -105,8 +105,8 @@ function Counsellors() {
               className="w-20 h-22 mx-auto mb-4 rounded-full"
             />
             <h3 className="text-lg font-semibold text-black mb-2">{track.title}</h3>
-            <p className="text-green-900 text-sm mb-4">{track.description}</p>
-            <p className="text-green-900 text-sm mb-4">{track.mobile}</p>
+            <p className="text-blue-900 text-sm mb-4">{track.description}</p>
+            <p className="text-blue-900 text-sm mb-4">{track.mobile}</p>
 
 
             <div className="flex items-center justify-between mt-auto">

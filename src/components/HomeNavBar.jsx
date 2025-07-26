@@ -42,7 +42,7 @@ function HomeNavBar() {
   ];
 
   return (
-    <div className='w-full h-30 top-0 right-0 left-0 z-50 bg-[#3E4227] flex items-center justify-between px-8'>
+    <div className='w-full h-30 top-0 right-0 left-0 z-50 bg-blue-950 flex items-center justify-between px-8'>
       
       {/* Logo with Image and Text */}
       <motion.div

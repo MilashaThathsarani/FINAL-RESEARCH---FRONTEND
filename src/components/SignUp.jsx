@@ -2,7 +2,7 @@ import React from 'react';
 
 function Signup() {
   return (
-    <section className="min-h-screen bg-[#3E4227] flex items-center justify-center px-6 py-12">
+    <section className="min-h-screen bg-blue-950 flex items-center justify-center px-6 py-12">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-5">
 
         {/* Logo at the top */}
@@ -28,7 +28,7 @@ function Signup() {
               <input
                 type="text"
                 placeholder="First name"
-                className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
+                className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
                 required
               />
             </div>
@@ -39,7 +39,7 @@ function Signup() {
               <input
                 type="text"
                 placeholder="Last name"
-                className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
+                className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
                 required
               />
             </div>
@@ -50,7 +50,7 @@ function Signup() {
             <label className="block text-gray-700 font-medium mb-1">Birthday</label>
             <input
               type="date"
-              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
+              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
               required
             />
           </div>
@@ -61,7 +61,7 @@ function Signup() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
+              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
               required
             />
           </div>
@@ -72,7 +72,7 @@ function Signup() {
             <input
               type="tel"
               placeholder="07x xxx xxxx"
-              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-green-900"
+              className="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-900"
               required
             />
           </div>
@@ -80,7 +80,7 @@ function Signup() {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-[#3E4227] text-white font-semibold py-2 rounded-lg hover:bg-green-900 transition"
+            className="w-full bg-blue-950 text-white font-semibold py-2 rounded-lg hover:bg-blue-900 transition"
           >
             Sign Up
           </button>
